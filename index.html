@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#355943">
+  <title>种子的秘密｜互动闯关</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="rotate">🌱<br>请把设备横过来<br><small>横屏闯关更好玩</small></div>
+  <div class="app"><div class="shell">
+    <header class="top">
+      <button class="icon" id="home" aria-label="返回选关">⌂</button>
+      <div class="brand"><span class="mark">🌱</span><div><b>种子的秘密</b><small>幼儿园大班互动闯关</small></div></div>
+      <div class="stars" id="stars"></div>
+      <button class="icon" id="sound" aria-label="开关音效">🔊</button>
+    </header>
+    <main id="menu" class="screen menu">
+      <section class="hero"><h1>种子探险队，出发！</h1><p>自由选择关卡，观察、匹配、排序，再点击“提交答案”。完成一关就能点亮一颗成长星。</p></section>
+      <section class="levels" id="levels"></section>
+      <div class="tip">👆 鼠标拖拽或点击选择，触屏也可以操作</div>
+    </main>
+    <main id="game" class="screen game hidden">
+      <section class="head"><span class="big" id="levelIcon">🌻</span><div><h2 id="levelTitle"></h2><p id="instruction"></p></div></section>
+      <section class="play" id="play"></section>
+      <footer class="actions"><button class="btn alt" id="reset">重新摆放</button><div class="feedback" id="feedback">完成后点击提交答案</div><button class="btn submit" id="submit">提交答案</button></footer>
+    </main>
+  </div></div>
+  <div id="modal" class="modal hidden"><div class="modal-card"><div class="medal">🏅</div><h2>闯关成功！</h2><p id="modalText">你发现了种子的秘密！</p><div class="modal-actions"><button class="btn alt" id="choose">选择其他关</button><button class="btn alt" id="again">再玩一次</button><button class="btn" id="next">下一关</button></div></div></div>
+  <div class="confetti" id="confetti"></div>
+  <script src="game.js"></script>
+</body>
+</html>
